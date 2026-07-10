@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(/.claude/skills/xhs-post/**)",
+      "Edit(/.claude/skills/wx-article/**)",
+      "Edit(/.claude/skills/x-post/**)",
+      "Edit(/.claude/skills/new-idea/**)",
+      "Bash([ -x \"$CHROME\" ])",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --screenshot=/Volumes/Samsung/media/xhs/2026-07-10-ai-payment-singularity/cover.png --window-size=1242,1656 --hide-scrollbars file:///Volumes/Samsung/media/xhs/2026-07-10-ai-payment-singularity/cover.html)",
+      "Read(//Applications/**)",
+      "Bash(/Volumes/Samsung/media/.claude/skills/xhs-post/templates/render.sh /Volumes/Samsung/media/xhs/2026-07-10-ai-payment-singularity)",
+      "Bash(/Volumes/Samsung/media/.claude/skills/xhs-post/templates/render.sh /Volumes/Samsung/media/.claude/skills/xhs-post/templates/warm)"
+    ]
+  }
+}

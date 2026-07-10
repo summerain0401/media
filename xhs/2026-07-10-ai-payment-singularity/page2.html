@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1242px; height: 1656px; overflow: hidden; }
+  body { font-family: -apple-system, "PingFang SC", sans-serif; background: #F6F3EC; color: #1F2421; position: relative; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(30,92,79,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(30,92,79,0.05) 1px, transparent 1px); background-size: 108px 108px; }
+  .wrap { position: absolute; inset: 0; padding: 100px 96px; display: flex; flex-direction: column; }
+  .kicker { display: flex; align-items: center; gap: 24px; font-size: 36px; letter-spacing: 6px; color: #6F7368; }
+  .kicker .dot { width: 16px; height: 16px; border-radius: 50%; background: #1E5C4F; }
+  .kicker .num { margin-left: auto; font-family: "SF Mono", Menlo, monospace; font-size: 34px; color: #9A9D90; }
+  .label { margin-top: 110px; display: inline-flex; align-self: flex-start; align-items: center; background: rgba(30,92,79,0.07); border: 2px solid rgba(30,92,79,0.30); color: #1E5C4F; border-radius: 999px; padding: 16px 38px; font-size: 40px; letter-spacing: 4px; font-weight: 600; }
+  h1 { margin-top: 64px; font-size: 100px; font-weight: 800; line-height: 1.3; letter-spacing: 3px; }
+  h1 .accent { color: #1E5C4F; }
+  .body-block { margin-top: 76px; font-size: 52px; line-height: 1.8; color: #4A4E45; letter-spacing: 2px; }
+  .body-block strong { color: #1F2421; }
+  .body-block p + p { margin-top: 48px; }
+  .quote { margin-top: auto; border-left: 10px solid #1E5C4F; padding: 16px 0 16px 44px; font-size: 52px; line-height: 1.6; font-weight: 700; letter-spacing: 2px; color: #1F2421; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span><span>热夏老友</span><span class="num">02/05</span></div>
+    <div class="label">先讲个冷知识</div>
+    <h1>1994年，一张CD<br>开启了<span class="accent">电商时代</span></h1>
+    <div class="body-block">
+      <p>1994年8月11日，有人在网上买了一张 Sting 的CD，<strong>12.48美元</strong>——公认第一笔加密保护的网络交易。</p>
+      <p>当时没人当回事。</p>
+      <p>30年后，电商是<strong>十万亿美元级</strong>的生意。</p>
+    </div>
+    <div class="quote">今天的AI支付，就站在<br>当年那张CD的位置。</div>
+  </div>
+</body>
+</html>

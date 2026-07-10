@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* 主题：finance 内容页 */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1242px; height: 1656px; overflow: hidden; }
+  body { font-family: "Songti SC", "STSong", serif; background: #F7F4EC; color: #1A2B4A; position: relative; }
+  .frame { position: absolute; inset: 44px; border: 3px solid #1A2B4A; }
+  .wrap { position: absolute; inset: 0; padding: 130px 120px; display: flex; flex-direction: column; }
+  .kicker { display: flex; justify-content: space-between; align-items: baseline; font-size: 36px; letter-spacing: 8px; border-bottom: 3px solid #1A2B4A; padding-bottom: 32px; }
+  .kicker .num { color: #8A7A45; font-size: 32px; letter-spacing: 3px; }
+  .label { margin-top: 110px; align-self: flex-start; background: #1A2B4A; color: #F7F4EC; font-size: 38px; letter-spacing: 6px; padding: 16px 40px; }
+  h1 { margin-top: 64px; font-size: 96px; font-weight: 900; line-height: 1.35; letter-spacing: 3px; }
+  h1 .accent { color: #B8912F; }
+  .body-block { margin-top: 70px; font-family: -apple-system, "PingFang SC", sans-serif; font-size: 50px; line-height: 1.8; color: #3D4A63; letter-spacing: 2px; }
+  .body-block strong { color: #1A2B4A; }
+  .list { margin-top: 70px; display: flex; flex-direction: column; }
+  .item { display: flex; gap: 36px; padding: 40px 8px; border-bottom: 2px solid rgba(26,43,74,0.22); font-family: -apple-system, "PingFang SC", sans-serif; font-size: 47px; line-height: 1.6; color: #3D4A63; }
+  .item .no { color: #B8912F; font-weight: 800; font-family: Georgia, serif; }
+  .quote { margin-top: auto; background: #1A2B4A; color: #F7F4EC; padding: 48px 52px; font-size: 52px; line-height: 1.6; letter-spacing: 3px; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="wrap">
+    <div class="kicker"><span>热夏老友</span><span class="num">02/05</span></div>
+    <div class="label">小节标签</div>
+    <h1>本页大标题<br>数字用<span class="accent">金色</span>强调</h1>
+    <div class="body-block">正文块：两到四句，讲透一个点。<strong>结论句加粗。</strong></div>
+    <div class="list">
+      <div class="item"><span class="no">01</span><span>清单条目一</span></div>
+      <div class="item"><span class="no">02</span><span>清单条目二</span></div>
+    </div>
+    <div class="quote">底部金句：深蓝底反白，本页最硬的判断</div>
+  </div>
+</body>
+</html>

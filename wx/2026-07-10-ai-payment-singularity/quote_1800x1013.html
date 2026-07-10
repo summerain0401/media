@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root { --accent: #1E5C4F; --ink: #1F2421; --sub: #6F7368; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1800px; height: 1013px; overflow: hidden; }
+  body { font-family: -apple-system, "PingFang SC", sans-serif; background: #F6F3EC; color: var(--ink); position: relative; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(31,36,33,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(31,36,33,0.035) 1px, transparent 1px); background-size: 90px 90px; }
+  .wrap { position: absolute; inset: 0; padding: 120px 160px; display: flex; flex-direction: column; }
+  .mark { font-size: 160px; line-height: 1; color: var(--accent); font-family: Georgia, serif; }
+  .quote { margin-top: 8px; font-size: 84px; font-weight: 800; line-height: 1.6; letter-spacing: 4px; }
+  .quote .accent { color: var(--accent); }
+  .foot { margin-top: auto; display: flex; align-items: center; gap: 24px; font-size: 40px; color: var(--sub); letter-spacing: 6px; }
+  .foot .bar { width: 64px; height: 6px; background: var(--accent); border-radius: 3px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="mark">“</div>
+    <div class="quote">所有奇点在发生的当天，<br>看起来都像一条<span class="accent">不重要的新闻</span>。</div>
+    <div class="foot"><span class="bar"></span><span>热夏老友</span></div>
+  </div>
+</body>
+</html>

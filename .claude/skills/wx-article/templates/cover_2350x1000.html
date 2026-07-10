@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* 公众号头条封面 2.35:1。领域换色只改 --accent：tech 墨绿 #1E5C4F / finance 藏蓝 #1A2B4A（金 #B8912F 辅助）/ warm 暖橘 #E07A3F */
+  :root { --accent: #1E5C4F; --ink: #1F2421; --sub: #6F7368; --line: #E7E3D8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 2350px; height: 1000px; overflow: hidden; }
+  body { font-family: -apple-system, "PingFang SC", sans-serif; background: #F6F3EC; color: var(--ink); position: relative; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(31,36,33,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(31,36,33,0.035) 1px, transparent 1px); background-size: 100px 100px; }
+  /* 重要：微信次条/分享会从中心裁 1:1（x 675~1675 区域），主文案必须落在这个安全区内 */
+  .wrap { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 400px; }
+  .kicker { display: flex; align-items: center; gap: 20px; font-size: 40px; letter-spacing: 8px; color: var(--sub); }
+  .kicker .dot { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); }
+  .title { margin-top: 56px; font-weight: 800; line-height: 1.3; font-size: 140px; letter-spacing: 6px; }
+  .title .accent { color: var(--accent); }
+  .sub { margin-top: 48px; font-size: 48px; color: var(--sub); letter-spacing: 8px; }
+  .corner-l { position: absolute; left: 72px; top: 72px; width: 150px; height: 150px; border-left: 6px solid var(--accent); border-top: 6px solid var(--accent); }
+  .corner-r { position: absolute; right: 72px; bottom: 72px; width: 150px; height: 150px; border-right: 6px solid var(--accent); border-bottom: 6px solid var(--accent); }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="corner-l"></div>
+  <div class="corner-r"></div>
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span><span>热夏老友</span></div>
+    <!-- 主标题 1-2 行，≤12 字/行；必须留在画面中央（1:1 裁切安全区） -->
+    <div class="title">封面主标题<br><span class="accent">关键词</span>强调</div>
+    <div class="sub">副文案一句话，可省略</div>
+  </div>
+</body>
+</html>
