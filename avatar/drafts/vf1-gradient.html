@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; }
+  body { width:1000px; height:1000px; overflow:hidden; background:#0d1017; }
+</style></head><body>
+<svg width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <!-- 描边本身从深空到暖阳渐变，笔从冷起、暖收 -->
+    <linearGradient id="sweepG" x1="0.85" y1="0.1" x2="0.1" y2="0.75">
+      <stop offset="0%" stop-color="#2a3547"/>
+      <stop offset="55%" stop-color="#c8622f"/>
+      <stop offset="100%" stop-color="#ffcf7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="#0d1017"/>
+  <!-- 一笔未闭合的圆，缺口在左下，笔锋顺时针冷→暖 -->
+  <path d="M 500,150
+           A 350,350 0 1 1 175,555"
+        fill="none" stroke="url(#sweepG)" stroke-width="64" stroke-linecap="round"/>
+</svg>
+</body></html>

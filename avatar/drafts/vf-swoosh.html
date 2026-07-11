@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; }
+  body { width:1000px; height:1000px; overflow:hidden; background:#f5f1ea; }
+</style></head><body>
+<svg width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="stroke1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2333"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="#f5f1ea"/>
+  <!-- 一笔未闭合的禅意圆：留白处是缺口，暗示"不完美但真实"，克制的书法感 -->
+  <path d="M 500,150
+           A 350,350 0 1 1 175,555"
+        fill="none" stroke="url(#stroke1)" stroke-width="64" stroke-linecap="round"/>
+  <!-- 暖色一点，笔锋收笔处 -->
+  <circle cx="175" cy="555" r="38" fill="#f0552e"/>
+</svg>
+</body></html>
