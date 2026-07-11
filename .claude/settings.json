@@ -11,5 +11,17 @@
       "Bash(/Volumes/Samsung/media/.claude/skills/xhs-post/templates/render.sh /Volumes/Samsung/media/xhs/2026-07-10-ai-payment-singularity)",
       "Bash(/Volumes/Samsung/media/.claude/skills/xhs-post/templates/render.sh /Volumes/Samsung/media/.claude/skills/xhs-post/templates/warm)"
     ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.prompt // \"\"' | grep -qE '清理上下文|清上下文|收尾|/clear' && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"用户准备清理上下文。按项目收尾流程执行：1) git status 检查未提交文件；2) 有改动则提交并推送到 GitHub（HTTPS）；3) 检查 memory 是否需要新增或更新；4) 确认后告知用户可以执行 /clear。\"}}' || true"
+          }
+        ]
+      }
+    ]
   }
 }

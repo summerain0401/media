@@ -82,6 +82,8 @@ x/        # X 成品：按主题分文件夹（YYYY-MM-DD-slug/thread.md）
 
 **定稿归档**：每个选题出图交付后，将全套资产 git 提交并推送到 https://github.com/summerain0401/media（走 HTTPS，本机 SSH 密钥属于另一账号不可用）。
 
+**清理上下文前收尾**：用户表示准备清理上下文（/clear）时，先执行收尾检查——git status 查未提交文件、有改动则提交推送、确认 memory 是否需要更新，完成后再告知可以清理。（.claude/settings.json 中已配置 UserPromptSubmit hook 自动提醒）
+
 ## 通用红线
 
 - 金融内容不做收益承诺，附风险提示。
