@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1242px; height: 1656px; overflow: hidden; }
+  body { font-family: -apple-system, "PingFang SC", sans-serif; background: #F6F3EC; color: #1F2421; position: relative; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(30,92,79,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(30,92,79,0.05) 1px, transparent 1px); background-size: 108px 108px; }
+  .wrap { position: absolute; inset: 0; padding: 100px 96px; display: flex; flex-direction: column; }
+  .kicker { display: flex; align-items: center; gap: 24px; font-size: 36px; letter-spacing: 6px; color: #6F7368; }
+  .kicker .dot { width: 16px; height: 16px; border-radius: 50%; background: #1E5C4F; }
+  .kicker .num { margin-left: auto; font-family: "SF Mono", Menlo, monospace; font-size: 34px; color: #9A9D90; }
+  .label { margin-top: 90px; display: inline-flex; align-self: flex-start; align-items: center; background: rgba(30,92,79,0.07); border: 2px solid rgba(30,92,79,0.30); color: #1E5C4F; border-radius: 999px; padding: 16px 38px; font-size: 40px; letter-spacing: 4px; font-weight: 600; }
+  h1 { margin-top: 56px; font-size: 92px; font-weight: 800; line-height: 1.3; letter-spacing: 3px; }
+  h1 .accent { color: #1E5C4F; }
+  .list { margin-top: 60px; display: flex; flex-direction: column; gap: 30px; }
+  .item { background: #FFFFFF; border: 2px solid #E7E3D8; border-radius: 24px; padding: 34px 42px; font-size: 42px; line-height: 1.55; color: #4A4E45; display: flex; gap: 30px; box-shadow: 0 6px 20px rgba(31,36,33,0.04); }
+  .item .no { color: #1E5C4F; font-weight: 800; font-family: "SF Mono", Menlo, monospace; flex-shrink: 0; }
+  .item strong { color: #1F2421; }
+  .quote { margin-top: auto; border-left: 10px solid #1E5C4F; padding: 16px 0 16px 44px; font-size: 48px; line-height: 1.55; font-weight: 700; letter-spacing: 2px; color: #1F2421; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span><span>热夏老友</span><span class="num">04/05</span></div>
+    <div class="label">具体存什么</div>
+    <h1>三样<span class="accent">最值钱</span></h1>
+    <div class="list">
+      <div class="item"><span class="no">01</span><span><strong>你的规则</strong>——判断标准、口味、红线，写成说明文件，每次开头喂给它</span></div>
+      <div class="item"><span class="no">02</span><span><strong>跑通的流程</strong>——第一次做对的步骤存成模板，下次一句话复现</span></div>
+      <div class="item"><span class="no">03</span><span><strong>踩过的坑</strong>——AI 犯过的错和纠正方法，同一个坑不掉第二次</span></div>
+    </div>
+    <div class="quote">调教成本，只付一次。</div>
+  </div>
+</body>
+</html>
