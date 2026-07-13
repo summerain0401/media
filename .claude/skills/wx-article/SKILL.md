@@ -75,6 +75,7 @@ python3 .claude/skills/wx-article/scripts/md2wechat.py wx/<主题文件夹>/arti
 
 ## 红线
 
+- **交付前必须按 `content-review` skill 的公众号一节做合规扫描**（含标题、摘要）。加密内容可科普但禁诱导交易表述；禁利益诱导式转发话术。
 - 金融内容文末加风险提示，不构成投资建议。
 - 涉政策监管话题只引用公开信息，不做阴谋论式解读。
 - 引用数据注明来源。

@@ -18,6 +18,7 @@ ideas/    # 选题库：每个想法一个 md 文件（YYYY-MM-DD-slug.md）
 xhs/      # 小红书成品：按主题分文件夹（YYYY-MM-DD-slug/content.md）
 wx/       # 公众号成品：按主题分文件夹（YYYY-MM-DD-slug/article.md）
 x/        # X 成品：按主题分文件夹（YYYY-MM-DD-slug/thread.md）
+operations/ # 运营：起号规划、周复盘记录（cold-start-plan.md）
 ```
 
 同一选题在三个平台目录下使用**相同的文件夹名**，方便对照。
@@ -26,6 +27,7 @@ x/        # X 成品：按主题分文件夹（YYYY-MM-DD-slug/thread.md）
 
 - `/new-idea`：总入口。想法 → 选题文件 → 三平台内容一次生成。
 - `/xhs-post`、`/wx-article`、`/x-post`：单平台生成，各自内置平台规范和红线。
+- `/content-review`：平台合规审稿。任何平台文字稿在初稿交付前和定稿出图前**必须**过其分平台红线（小红书禁加密/web3 词条最严），审出问题先改再交付。
 
 ## 叙事与受众规范（所有平台强制）
 
