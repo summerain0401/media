@@ -15,13 +15,16 @@
 
 ```
 ideas/    # 选题库：每个想法一个 md 文件（YYYY-MM-DD-slug.md）
+materials/ # 素材库：用户投放的实测素材，按选题分文件夹（notes.md + 截图；raw/ 放未打码原图，不上 git）
 xhs/      # 小红书成品：按主题分文件夹（YYYY-MM-DD-slug/content.md）
 wx/       # 公众号成品：按主题分文件夹（YYYY-MM-DD-slug/article.md）
 x/        # X 成品：按主题分文件夹（YYYY-MM-DD-slug/thread.md）
 operations/ # 运营：起号规划、周复盘记录（cold-start-plan.md）
 ```
 
-同一选题在三个平台目录下使用**相同的文件夹名**，方便对照。
+同一选题在三个平台目录下使用**相同的文件夹名**，方便对照；素材文件夹在选题进入生产后也对齐到该名。
+
+**素材库规则**（详见 `materials/README.md`）：生产初稿前必须读完该选题的素材文件夹，事实类信息（版本号、指令原话、耗时、翻车细节）以素材为准；素材里没有的细节宁可模糊或追问，不编造。
 
 ## Skills（四部门流水线）
 
