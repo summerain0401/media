@@ -1,30 +1,30 @@
-# media · 自媒体内容工作台
+# media · Content Workspace
 
-[中文](README.md) | [English](README.en.md)
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-「热夏老友」的多平台创作工作台，保存 AI 工具实测、生活感悟与交易哲学的选题、素材笔记、运营记录和图文成品。主要面向普通读者，以真实体验和可核对的素材组织内容。
+The multi-platform writing workspace for 热夏老友 (Summer Rain): ideas, source notes, editorial operations, and finished posts about AI-tool experiments, everyday life, and trading philosophy. Written primarily for general Chinese readers and grounded in documented experience.
 
-## 从哪里开始
+## Start here
 
-| 入口 | 内容 |
+| Entry | Contents |
 | --- | --- |
-| [创作约定](CLAUDE.md) | 账号定位、平台分工与编辑流程 |
-| [素材库](materials/README.md) | 收件、实测笔记和事实依据 |
-| [选题](ideas/) | 待评估与推进中的内容 |
-| [小红书](xhs/) / [公众号](wx/) / [X](x/) | 按同名主题目录对齐的平台版本 |
-| [运营记录](operations/) / [账号介绍](profile/) | 规划、复盘与公开简介 |
+| [Editorial conventions](CLAUDE.md) | Positioning, platform roles, and workflow |
+| [Materials guide](materials/README.md) | Intake, experiment notes, and factual evidence |
+| [Ideas](ideas/) | Topics awaiting evaluation or production |
+| [Xiaohongshu](xhs/) / [WeChat](wx/) / [X](x/) | Platform variants aligned by topic directory |
+| [Operations](operations/) / [Profile](profile/) | Plans, reviews, and public bios |
 
-## 创作流程
+## Workflow
 
-选题 → 运营评估 → 人工决定推进 → 初稿 → 审稿与修改 → 人工定稿 → 排版出图与归档。仓库中的规划、草稿或目录名不表示内容已经对外发布；历史产品体验和运营判断以文档日期为准。
+Idea → editorial evaluation → human decision → draft → review and revision → human sign-off → layout, images, and archiving. A plan, draft, or directory name does not establish that a post has been published. Product observations and editorial decisions are dated snapshots.
 
-`.claude/skills/` 保存各环节的创作指引与排版模板，需要支持相应 Skill 的 Agent 环境。直接阅读 Markdown 无需安装依赖；HTML 模板和转换脚本的运行依赖见各自说明。
+`.claude/skills/` contains workflow instructions and layout templates for compatible agent environments. Reading Markdown needs no installation; HTML templates and conversion scripts have their own dependencies and instructions.
 
-## 素材与使用边界
+## Materials and reuse
 
-原始未打码资料只应保存在被忽略的本地目录；对外示例应使用已脱敏内容。事实细节以素材为准，不把计划、推演或别人的经历改写成作者实测。交易板块只讨论心态、纪律与复盘，不提供行情和标的建议。
+Keep unredacted source material in ignored local directories. Shared examples should be redacted. Ground factual details in source notes, and do not present plans, projections, or another person's experience as the author's own experiment. Trading content covers mindset, discipline, and review rather than market calls or asset recommendations.
 
-如需指出事实错误，请提供文件位置、原始来源和来源日期。采用模板时应替换账号品牌、个人参考图和示例内容。
+Corrections should include a file location, primary source, and source date. Replace account branding, personal reference images, and sample copy before adapting templates.
 
-## 许可
-当前默认分支未提供项目级许可证文件；公开可见不等于授予复用许可。第三方依赖及素材保留各自条款。
+## License
+The default branch does not include a project-level license file. Public visibility does not itself grant reuse rights. Third-party dependencies and assets retain their own terms.

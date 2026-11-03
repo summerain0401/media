@@ -1,6 +1,6 @@
 # media · Content Workspace
 
-[中文](README.md) | [English](README.en.md)
+[English](README.md) | [简体中文](README.zh-CN.md)
 
 The multi-platform writing workspace for 热夏老友 (Summer Rain): ideas, source notes, editorial operations, and finished posts about AI-tool experiments, everyday life, and trading philosophy. Written primarily for general Chinese readers and grounded in documented experience.
 
